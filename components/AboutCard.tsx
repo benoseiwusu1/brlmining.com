@@ -24,11 +24,11 @@ const AboutCard: React.FC<AboutCardProps> = ({
           isReverse ? "lg:flex-row-reverse" : "lg:flex-row"
         } container mx-auto flex flex-col gap-x-10 items-center lg:space-x-8`}
       >
-        <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
+        <div className="w-full lg:w-1/2 mb-8 lg:mb-0  h-[550px]">
           <img
             src={image}
             alt="Map of projects locations"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-full object-cover"
           />
         </div>
 
