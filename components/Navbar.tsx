@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
       path: "/about",
       dropdown: [
         { name: "About", path: "/about" },
-        { name: "Management & Advisors", path: "/management" },
+        { name: "Our Leadership", path: "/about/management" },
       ],
     },
     {
