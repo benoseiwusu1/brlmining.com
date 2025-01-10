@@ -1,42 +1,42 @@
 import React from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import Image from "next/image";
 
 type NewsCardProps = {
-  category: string;
+  categories?: string[];
   date: string;
   title: string;
-  iconUrl: string;
+  imageUrl?: string;
+  link?: string;
 };
 
 const NewsCard: React.FC<NewsCardProps> = ({
-  category,
+  categories,
   date,
   title,
-  iconUrl,
+  imageUrl,
+  link,
 }) => {
   return (
     <div className="bg-white rounded shadow-lg overflow-hidden md:w-[370px] h-[380px]">
-      {/* Icon Section */}
-      <div
-        className={`${
-          category === "Financial" && "bg-secondary"
-        } p-6 flex justify-center h-[210px] relative mb-4 bg-primary`}
-      >
-        {/* <img
-          src={iconUrl}
-          alt={category}
-          className="h-full w-full object-cover"
-        /> */}
-        <Icon icon={iconUrl} className="text-[100px] text-[#f5f5f5] mt-4" />
+      <div className="flex justify-center h-[210px] relative mb-4 bg-primary">
+        <img src={(imageUrl && imageUrl) || ""} alt="" className="w-full" />
         <span className="text-xs font-semibold uppercase text-gray-500 bg-gray-200 py-2 absolute bottom-0 left-4 bg-gray px-4">
-          {category}
+          {categories?.join(", ")}
         </span>
       </div>
 
       {/* Content Section */}
-      <div className="p-4">
-        <p className="text-xs text-gray-500 mt-2">{date}</p>
-        <h3 className="text-lg font-bold mt-2">{title}</h3>
+      <div className="px-4 flex flex-col gap-y-4 justify-between">
+        <p className="text-xs text-gray-500 mt-1">{date}</p>
+        <h3 className="text-sm font-bold mt-1">{title}</h3>
+        <a
+          target="blank"
+          href={link}
+          className="text-sm font-bold text-primary hover:text-black mt-6 hover:underline transition-all duration-150 w-max"
+        >
+          Read More
+        </a>
       </div>
     </div>
   );

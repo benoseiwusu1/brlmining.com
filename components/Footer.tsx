@@ -1,6 +1,6 @@
 // src/components/Footer.tsx
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import Socials from "./Socials";
 
 const Footer: React.FC = () => {
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             {importantLinks.map((link, index) => (
               <li key={index}>
                 <Link
-                  to={link.path}
+                  href={link.path}
                   className="text-gray-300 hover:text-white transition"
                 >
                   {link.name}
@@ -97,11 +97,11 @@ const Footer: React.FC = () => {
         <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
             © 2024 BRL Mining Exploration Inc. All rights reserved.{" "}
-            <Link to="/terms" className="hover:text-white">
+            <Link href="/terms" className="hover:text-white">
               Terms of Service
             </Link>{" "}
             |{" "}
-            <Link to="/privacy" className="hover:text-white">
+            <Link href="/privacy" className="hover:text-white">
               Privacy Policy
             </Link>
           </p>

@@ -1,3 +1,4 @@
+import RssFeed from "@/components/RssFeed";
 import Hero from "../components/Hero";
 import News from "../components/News";
 
@@ -10,7 +11,8 @@ export default function Home() {
         button={true}
         mainPage={true}
       />
-      <News />
+      {/* <News /> */}
+      <RssFeed />
     </div>
   );
 }
