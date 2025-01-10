@@ -21,8 +21,8 @@ const NewsCard: React.FC<NewsCardProps> = ({
     <div className="bg-white rounded shadow-lg overflow-hidden md:w-[370px] h-[380px]">
       <div className="flex justify-center h-[210px] relative mb-4 bg-primary">
         <img src={(imageUrl && imageUrl) || ""} alt="" className="w-full" />
-        <span className="text-xs font-semibold uppercase text-gray-500 bg-gray-200 py-2 absolute bottom-0 left-4 bg-gray px-4">
-          {categories?.join(", ")}
+        <span className="text-xs font-semibold uppercase text-gray-500 bg-gray-200 py-2 absolute bottom-0 left-4 bg-gray px-3">
+          {categories && categories[0]}
         </span>
       </div>
 

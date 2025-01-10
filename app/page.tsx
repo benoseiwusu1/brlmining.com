@@ -11,7 +11,6 @@ export default function Home() {
         button={true}
         mainPage={true}
       />
-      {/* <News /> */}
       <RssFeed />
     </div>
   );
