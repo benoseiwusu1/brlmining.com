@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Icon } from "@iconify/react";
 
 const Info: React.FC = () => {
@@ -20,7 +20,7 @@ const Info: React.FC = () => {
             deposit.
           </p>
           <Link
-            to="/investor-centre"
+            href="/investor-centre"
             className="inline-block mt-4 px-6 py-3 border border-white text-white rounded-full text-sm"
           >
             STOCK & INVESTOR INFO
@@ -41,7 +41,7 @@ const Info: React.FC = () => {
             Hope Gold Projects.
           </p>
           <Link
-            to="/about"
+            href="/about"
             className="inline-block mt-4 px-6 py-3 border border-white text-white rounded-full text-sm"
           >
             ABOUT US

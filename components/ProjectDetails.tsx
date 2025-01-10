@@ -1,6 +1,6 @@
-// src/components/ProjectDetails.tsx
+"use client";
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import "./ProjectDetails.css";
 import News from "./News";
@@ -40,7 +40,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
     <div>
       <div className="w-full mx-auto font-primary bg-white md:w-4/6 pb-4 mb-5">
         <div className="bg-white mb-8 py-8 px-8 pt-16 pb-6">
-          <Link to="/projects" className="text-primary text-sm">
+          <Link href="/projects" className="text-primary text-sm">
             &lt;<span className="ml-2">ALL PROJECTS</span>
           </Link>
           <h1 className="text-4xl font-semibold mt-2 uppercase">{title}</h1>
@@ -53,7 +53,9 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
             <button
               onClick={() => handleToggle(section.title)}
               className={`w-full flex justify-between items-center px-6 rounded text-xl font-semibold ${
-                section.title === "Location" || section.title === "History"
+                section.title === "Prime Location" ||
+                section.title === "Exploration Upside" ||
+                section.title === "Infrastructure and Proximity"
                   ? "bg-gray py-8"
                   : "bg-none py-4"
               }`}
@@ -81,10 +83,10 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
 
         {/* Navigation */}
         <div className="flex justify-between mt-16 px-6 text-sm uppercase">
-          <Link to={prevProject.path} className="text-primary">
+          <Link href={prevProject.path} className="text-primary">
             &lt; PREV: {prevProject.name}
           </Link>
-          <Link to={nextProject.path} className="text-primary">
+          <Link href={nextProject.path} className="text-primary">
             NEXT: {nextProject.name} &gt;
           </Link>
         </div>
