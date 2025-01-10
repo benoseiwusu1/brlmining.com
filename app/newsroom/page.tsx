@@ -1,10 +1,9 @@
 "use client";
-import { useQuery } from "@tanstack/react-query";
 import moment from "moment";
-import Link from "next/link";
-import NewsCard from "./NewsCard";
-import NewsPlaceHolder from "./NewsPlaceHolder";
-import Button from "./Button";
+import NewsCard from "../../components/NewsCard";
+import NewsPlaceHolder from "../../components/NewsPlaceHolder";
+import { useQuery } from "@tanstack/react-query";
+import Hero from "@/components/Hero";
 
 const formatDate = (dateString: string): string => {
   return moment(dateString).format("MMMM Do, YYYY");
@@ -19,7 +18,6 @@ type FeedItem = {
   imageUrl?: string;
 };
 
-// Updated fetch function with proper typing
 const fetchRss = async (): Promise<FeedItem[]> => {
   const response = await fetch("/api/rss");
   if (!response.ok) {
@@ -28,7 +26,7 @@ const fetchRss = async (): Promise<FeedItem[]> => {
   return response.json();
 };
 
-export default function RssFeed() {
+const Newsroom = () => {
   const {
     data: rssData = [],
     isLoading,
@@ -43,18 +41,9 @@ export default function RssFeed() {
   console.log("data", rssData);
 
   return (
-    <section className="py-12">
-      <div className="container mx-auto px-4 md:px-20">
-        <div className="flex justify-between items-center mb-8">
-          <h2 className="section-title">{"News"}</h2>
-          <Link
-            href="/newsroom"
-            className="text-secondary font-semibold flex items-center"
-          >
-            More &rarr;
-          </Link>
-        </div>
-
+    <section>
+      <Hero title="Newsroom" background="/images/news-bg.jpg" />
+      <div className="container mx-auto px-4 md:px-20 my-20">
         {isError ? (
           <p style={{ color: "red", textAlign: "center" }}>
             Error: {error?.message}
@@ -67,7 +56,7 @@ export default function RssFeed() {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {rssData.slice(0, 3).map((item: FeedItem, index: number) => (
+            {rssData.slice(0, 12).map((item: FeedItem, index: number) => (
               <NewsCard
                 key={index}
                 title={item.title}
@@ -79,8 +68,9 @@ export default function RssFeed() {
             ))}
           </div>
         )}
-        <Button text="View All Newsroom Posts" path="/newsroom" />
       </div>
     </section>
   );
-}
+};
+
+export default Newsroom;
