@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Hero
-        title="Exploring for Ontario’s next Gold Mine"
+        title="Breakthrough Resources is a Junior Explorer, developing the historic high grade Sewum underground asset"
         background="/images/hero1.jpg"
         button={true}
         mainPage={true}
