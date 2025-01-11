@@ -5,6 +5,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import "./ProjectDetails.css";
 import News from "./News";
 import Info from "./Info";
+import ProjectCard from "./ProjectCard";
 
 type Section = {
   title: string;
@@ -23,8 +24,8 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
   title,
   location,
   sections,
-  prevProject,
-  nextProject,
+  // prevProject,
+  // nextProject,
 }) => {
   const [openSection, setOpenSection] = useState<string>(sections[0].title);
 
@@ -56,7 +57,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
                 section.title === "Prime Location" ||
                 section.title === "Exploration Upside" ||
                 section.title === "Infrastructure and Proximity"
-                  ? "bg-gray py-8"
+                  ? "bg-grey py-8"
                   : "bg-none py-4"
               }`}
             >
@@ -71,7 +72,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
               <div
                 className={`p-6 ${
                   section.title === "Location" || section.title === "History"
-                    ? "bg-gray"
+                    ? "bg-grey"
                     : "bg-none"
                 }`}
               >
@@ -82,16 +83,17 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
         ))}
 
         {/* Navigation */}
-        <div className="flex justify-between mt-16 px-6 text-sm uppercase">
+        {/* <div className="flex justify-between mt-16 px-6 text-sm uppercase">
           <Link href={prevProject.path} className="text-primary">
             &lt; PREV: {prevProject.name}
           </Link>
           <Link href={nextProject.path} className="text-primary">
             NEXT: {nextProject.name} &gt;
           </Link>
-        </div>
+        </div> */}
       </div>
-      <News />
+      {/* <News /> */}
+      <ProjectCard />
       <Info />
     </div>
   );

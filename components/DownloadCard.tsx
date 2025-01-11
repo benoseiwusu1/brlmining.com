@@ -9,7 +9,7 @@ type DownloadCardProps = {
 const DownloadCard: React.FC<DownloadCardProps> = ({ title, downloadLink }) => {
   return (
     <div className="bg-white p-10 rounded shadow-lg w-full">
-      <h3 className="text-lg font-semibold text-gray-800 mb-4">{title}</h3>
+      <h3 className="text-lg font-semibold text-grey-800 mb-4">{title}</h3>
       <a
         href={downloadLink}
         download

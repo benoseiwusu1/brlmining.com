@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
               <li key={index}>
                 <Link
                   href={link.path}
-                  className="text-gray-300 hover:text-white transition"
+                  className="text-grey-300 hover:text-white transition"
                 >
                   {link.name}
                 </Link>
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
         {/* Location Information */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Location</h3>
-          <address className="not-italic text-gray-300">
+          <address className="not-italic text-grey-300">
             No. 4 Apple Street
             <br />
             <br />
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
             <br />
             <a
               href="mailto:info@BRL Miningex.ca"
-              className="text-gray-300 hover:text-white transition"
+              className="text-grey-300 hover:text-white transition"
             >
               info@BRLmining.com
             </a>
@@ -67,11 +67,11 @@ const Footer: React.FC = () => {
         {/* Newsletter Subscription */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
-          <p className="text-gray-300 mb-4">
+          <p className="text-grey-300 mb-4">
             Subscribe to get news alerts and project updates.
           </p>
           <form className="flex flex-col space-y-4 mb-4">
-            <label htmlFor="email" className="text-gray-400 text-sm">
+            <label htmlFor="email" className="text-grey-400 text-sm">
               <span className="text-red-600">*</span> Email
             </label>
             <input
@@ -95,7 +95,7 @@ const Footer: React.FC = () => {
       {/* Bottom Footer */}
       <div className="border-t border-gray-700 mt-8 pt-4">
         <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">
+          <p className="text-grey-400 text-sm">
             © 2024 BRL Mining Exploration Inc. All rights reserved.{" "}
             <Link href="/terms" className="hover:text-white">
               Terms of Service

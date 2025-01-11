@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
   }, [mobileMenuOpen]);
 
   return (
-    <nav className="bg-gray py-2 font-primary">
+    <nav className="bg-grey py-2 font-primary">
       <div className="w-full container mx-auto px-4 sm:px-6 md:px-20 py-3 flex justify-between items-center">
         <Link href="/">
           <img
@@ -85,7 +85,7 @@ const Navbar: React.FC = () => {
                       <Link
                         key={dropdownLink.name}
                         href={dropdownLink.path}
-                        className="block px-4 py-2 hover:bg-gray uppercase text-sm"
+                        className="block px-4 py-2 hover:bg-grey uppercase text-sm"
                       >
                         {dropdownLink.name}
                       </Link>
