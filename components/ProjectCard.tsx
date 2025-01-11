@@ -18,25 +18,25 @@ const explore = [
     title: "Resource Upgrading",
     description:
       "Launching an extensive drilling campaign to upgrade the underground resource over the next two years. With an estimated budget of US$ 4.5 million, this phase will include drilling, geotechnical studies, and orebody characterization, ultimately leading to an updated Mineral Resource Estimate (MRE) in H1 2025",
-    icon: "game-icons:underground-cave",
+    icon: "carbon:group-resource",
   },
   {
-    title: "Underground Development",
+    title: "Feasibility Study (FS)",
     description:
-      "Progressing with shaft sinking and lateral expansion at the Sewum mine to unlock further high-grade gold resources with minimal capital investment. This development leverages the existing infrastructure of the historic underground mine.",
-    icon: "game-icons:underground-cave",
+      "Following the updated MRE, we will begin a Feasibility Study (FS) to assess the long-term viability of the project. The FS, anticipated to be completed in H2 2025, will provide essential insights into the project's future potential",
+    icon: "arcticons:kanji-study",
   },
   {
-    title: "Underground Development",
+    title: "Additional Drilling",
     description:
-      "Progressing with shaft sinking and lateral expansion at the Sewum mine to unlock further high-grade gold resources with minimal capital investment. This development leverages the existing infrastructure of the historic underground mine.",
-    icon: "game-icons:underground-cave",
+      ": Expanding our drilling efforts into other high-priority zones, particularly the Oteng Block, which shows promise for resource expansion. This area will be a key focus for ongoing exploration and resource growth",
+    icon: "carbon:drill-down",
   },
   {
-    title: "Underground Development",
+    title: "Funding and Financial Strategy",
     description:
-      "Progressing with shaft sinking and lateral expansion at the Sewum mine to unlock further high-grade gold resources with minimal capital investment. This development leverages the existing infrastructure of the historic underground mine.",
-    icon: "game-icons:underground-cave",
+      "Securing continued funding to maintain project momentum and progress through the Pre-Feasibility Study (PFS) and beyond. We are committed to pursuing funding opportunities that will support Sewum’s growth and its potential as a scalable, high-margin gold production asset",
+    icon: "mingcute:refund-dollar-line",
   },
 ];
 
@@ -76,7 +76,7 @@ const ProjectCard: React.FC = () => {
           className="flex items-center justify-between w-max bg-primary text-white px-8 py-3 rounded-full mb-4 mx-auto"
           onClick={() => setOpenSection1(!openSection1)}
         >
-          <span>See strategies</span>
+          <span>{openSection1 ? "Hide strategies" : "See strategies"}</span>
           <Icon
             icon={openSection1 ? "mdi:chevron-up" : "mdi:chevron-down"}
             fontSize={24}
@@ -100,7 +100,7 @@ const ProjectCard: React.FC = () => {
                 </div>
                 {/* Content Section */}
                 <div className="px-7 flex flex-col gap-y-4 pt-12 text-center">
-                  <h3 className="text-lg mb-6">{title}</h3>
+                  <h3 className="text-lg mb-3">{title}</h3>
                   <p className="text-base leading-relaxed text-gray-500">
                     {description}
                   </p>
