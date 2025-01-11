@@ -8,7 +8,7 @@ const Projects = () => {
     <section className="">
       <Hero
         title="Projects"
-        description="BRL Mining Exploration is exploring for multimillion-ounce gold deposits on four district scale projects in north-western Ontario, Canada. The projects range from grassroots to the early stages of discovery where the presence of high-grade gold has been confirmed by drilling. Exploration programs will focus on expanding the existing zones of gold mineralization and identifying new targets for discovery drilling."
+        description="The Sewum Gold Project is a highly advanced exploration initiative situated in the Aowin district of Western North Region, Ghana. Located approximately 510 km northwest of Accra and 25 km southeast of Enchi, the project lies within a region renowned for its world-class gold deposits, including Newmont’s Yamfo, Newcore Gold's Enchi project, Newmont’s Ahafo projects, Asante Gold’s Bibiani, and Kinross’ Chirano."
         background="/images/project-bg.jpg"
       />
       <div className="w-full mx-auto px-4 sm:px-6 md:px-24 py-16">

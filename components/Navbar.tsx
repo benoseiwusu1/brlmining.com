@@ -22,13 +22,13 @@ const Navbar: React.FC = () => {
       dropdown: [
         { name: "Summary", path: "/projects" },
         { name: "Sewum Gold Project", path: "/projects/sewum-gold-project" },
-        { name: "Gold Standard", path: "/project/gold-standard" },
-        { name: "Keezhik", path: "/project/keezhik" },
-        { name: "Attwood", path: "/project/attwood" },
-        {
-          name: "North Kimberley Diamond Project",
-          path: "/project/north-kimberley",
-        },
+        // { name: "Gold Standard", path: "/project/gold-standard" },
+        // { name: "Keezhik", path: "/project/keezhik" },
+        // { name: "Attwood", path: "/project/attwood" },
+        // {
+        //   name: "North Kimberley Diamond Project",
+        //   path: "/project/north-kimberley",
+        // },
       ],
     },
     { name: "Investor Centre", path: "/investor-centre" },
