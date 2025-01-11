@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import moment from "moment";
 import Link from "next/link";
 import NewsCard from "./NewsCard";
-import NewsPlaceHolder from "./NewsPlaceHolder";
+import { NewsPlaceHolder } from "../components/NewsPlaceHolder";
 import Button from "./Button";
 
 const formatDate = (dateString: string): string => {

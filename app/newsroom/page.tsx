@@ -1,7 +1,7 @@
 "use client";
 import moment from "moment";
 import NewsCard from "../../components/NewsCard";
-import NewsPlaceHolder from "../../components/NewsPlaceHolder";
+import { NewsPlaceHolder } from "../../components/NewsPlaceHolder";
 import { useQuery } from "@tanstack/react-query";
 import Hero from "@/components/Hero";
 
