@@ -14,3 +14,9 @@ body {
 .text-height {
   line-height: 20%;
 }
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
