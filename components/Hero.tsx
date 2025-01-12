@@ -41,7 +41,7 @@ const Hero: React.FC<HeroProps> = ({
             {title}
           </h1>
           {description && (
-            <p className="text-lg leading-relaxed mt-12">{description}</p>
+            <p className="text-lg leading-relaxed mt-6">{description}</p>
           )}
           {button && (
             <div className="md:space-x-4 flex md:items-center flex-col md:flex-row md:mt-10">
