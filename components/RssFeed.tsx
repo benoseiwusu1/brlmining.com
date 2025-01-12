@@ -46,7 +46,7 @@ export default function RssFeed() {
     <section className="py-12">
       <div className="container mx-auto px-4 md:px-20">
         <div className="flex justify-between items-center mb-8">
-          <h2 className="text-xl md:text-2xl font-bold mb-6">Latest News</h2>
+          <h2 className="text-xl md:text-2xl mb-6">Latest News</h2>
           <Link
             href="/newsroom"
             className="text-secondary font-semibold flex items-center"
@@ -79,7 +79,7 @@ export default function RssFeed() {
             ))}
           </div>
         )}
-        <Button text="View All Newsroom Posts" path="/newsroom" />
+        {/* <Button text="View All Newsroom Posts" path="/newsroom" /> */}
       </div>
     </section>
   );
