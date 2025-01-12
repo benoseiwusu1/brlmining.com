@@ -32,6 +32,7 @@ const Navbar: React.FC = () => {
       ],
     },
     { name: "Investors", path: "/investors" },
+    { name: "Sustainability", path: "/sustainability" },
     { name: "Newsroom", path: "/newsroom" },
     { name: "Contact", path: "/contact" },
   ];
