@@ -50,9 +50,15 @@ const sections = [
   },
   {
     imageSrc: "/images/pro3.jpg",
-    title: "Value Creation Connections",
+    title: "Our Environment",
     description:
-      "We are working to make mining sustainable by creating value throughout our chain as one of our purposes, and innovation and collaboration are the essential principles to achieve this...",
+      "At Breakthrough Resources, our commitment to the Sewum Gold Project is rooted in environmental responsibility and sustainability. We are dedicated to finding, developing, and operating mines in a manner that prioritizes environmental protection.",
+    description2:
+      "We apply the precautionary principle across all our exploration and development activities, ensuring we minimize negative environmental impacts and continuously enhance our management practices. Our approach includes strict regulatory compliance and collaborative efforts with stakeholders to improve environmental outcomes in the regions where we operate.",
+    description3:
+      "A core component of our environmental strategy is conducting pre-clearing environmental surveys and cultural heritage assessments before commencing exploration. This helps us identify and protect important cultural and biodiversity aspects. We avoid exploring land deemed culturally significant by Traditional Owners or where environmental impacts cannot be sustainably managed.",
+    description4:
+      "Our dedication to environmental stewardship is demonstrated by our unwavering adherence to all necessary environmental licenses, permits, and approvals, ensuring that we meet or exceed local and international standards of environmental protection.",
     bgColor: "bg-gray-100",
   },
 ];
@@ -102,6 +108,13 @@ const Sustainability = () => {
             <SheetDescription className="leading-relaxed text-base">
               {selectedSection?.description3}
             </SheetDescription>
+            {selectedSection?.description4 && (
+              <SheetDescription className="leading-relaxed text-base">
+                {selectedSection?.description4}
+              </SheetDescription>
+            )}
+
+            {/* subpoints */}
             {selectedSection?.subSection && (
               <div className="mt-6">
                 <h3 className="text-lg font-bold mb-4">
