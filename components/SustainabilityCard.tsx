@@ -26,7 +26,7 @@ const SustainabilityCard = ({
       </div>
       <div className="flex flex-col flex-grow justify-between">
         <CardHeader className="p-4">
-          <CardTitle className="font-normal">{section.title}</CardTitle>
+          <CardTitle className="font-bold">{section.title}</CardTitle>
         </CardHeader>
         <CardContent className="p-4 flex flex-col justify-between flex-grow">
           <CardDescription className="mb-4">
@@ -35,7 +35,7 @@ const SustainabilityCard = ({
           <Button
             variant="secondary"
             onClick={onOpen}
-            className="mt-auto w-full rounded-full bg-primary text-white hover:bg-primary-dark"
+            className="mt-auto w-full rounded-full bg-primary text-white hover:bg-primary-dark text-xs uppercase"
           >
             Read More
           </Button>

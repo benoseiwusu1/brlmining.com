@@ -9,6 +9,7 @@ import {
   SheetDescription,
 } from "@/components/ui/sheet";
 import Hero from "@/components/Hero";
+import RssFeed from "@/components/RssFeed";
 
 const sections = [
   {
@@ -75,10 +76,10 @@ const Sustainability = () => {
         description="At Breakthrough Resources, we are revitalizing the Sewum region, which has a mining history that dates back to 1909. Our mission is to explore, develop and establish a medium-scale underground mine that embodies 21st-century sustainability. As we advance with the Sewum Gold Project, we are committed to integrating sustainable practices into every facet of our operations. Our strategy is firmly rooted in a global vision that values local impact, ensuring the well-being of our people, the environment, and the communities we serve."
       />
       <div className="container mx-auto px-4 md:px-20">
-        <h3 className="text-2xl uppercase text-center mb-8">
+        <h3 className="text-4xl uppercase text-center my-12">
           Explore this section
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
           {sections.map((section, index) => (
             <SustainabilityCard
               key={index}
@@ -95,10 +96,10 @@ const Sustainability = () => {
       >
         <SheetContent
           style={{
-            width: "40vw", // Adjusts width as needed
-            maxWidth: "90vw", // Ensures responsiveness
-            maxHeight: "100vh", // Limits height to 90% of the viewport
-            overflowY: "auto", // Enables vertical scrolling for overflow content
+            width: "40vw",
+            maxWidth: "90vw",
+            maxHeight: "100vh",
+            overflowY: "auto",
           }}
           className="custom-scrollbar"
         >
@@ -146,6 +147,7 @@ const Sustainability = () => {
           </SheetHeader>
         </SheetContent>
       </Sheet>
+      <RssFeed />
     </section>
   );
 };
