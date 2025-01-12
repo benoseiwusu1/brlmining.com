@@ -17,14 +17,16 @@ const SustainabilityCard = ({
 }) => {
   return (
     <Card className="hover:shadow-lg transition-shadow flex flex-col justify-between">
-      <img
-        src={section.imageSrc}
-        alt={section.title}
-        className="h-32 w-full object-cover rounded-t"
-      />
+      <div className="h-36 w-full">
+        <img
+          src={section.imageSrc}
+          alt={section.title}
+          className="w-full h-full object-cover rounded-t"
+        />
+      </div>
       <div className="flex flex-col flex-grow justify-between">
         <CardHeader className="p-4">
-          <CardTitle className="">{section.title}</CardTitle>
+          <CardTitle className="font-normal">{section.title}</CardTitle>
         </CardHeader>
         <CardContent className="p-4 flex flex-col justify-between flex-grow">
           <CardDescription className="mb-4">
@@ -33,7 +35,7 @@ const SustainabilityCard = ({
           <Button
             variant="secondary"
             onClick={onOpen}
-            className="mt-auto w-full bg-primary text-white hover:bg-primary-dark"
+            className="mt-auto w-full rounded-full bg-primary text-white hover:bg-primary-dark"
           >
             Read More
           </Button>
