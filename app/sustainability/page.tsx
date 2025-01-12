@@ -37,6 +37,15 @@ const sections = [
       "Our commitment to the Sewum Gold Project includes fostering strong, respectful relationships with all stakeholders and the communities we work in. We approach community relations with respect and inclusivity, ensuring transparent, open, and effective engagement to build long-term, sustainable relationships. Our community and stakeholder engagement strategy involves identifying and consulting with all relevant stakeholders. We actively listen to, understand, and respond to community views, concerns, and feedback promptly. We adhere to the principle of free, prior, and informed consent in all interactions with local communities.",
     description2:
       "We are dedicated to respecting cultural heritage values through avoidance strategies and conducting thorough cultural heritage surveys before any ground activities commence. This ensures we identify and protect cultural or heritage sites, allowing us to adjust our activities to avoid these areas. Our focus extends to enriching community lives through partnerships, employment, contracting, and local procurement opportunities. We are committed to sustainable development and upholding fundamental human rights in every aspect of our operations.Our community engagement program aims to mitigate any potential negative impacts while promoting regional sustainable development. We invest in initiatives that address social needs, build capacity, and align with strategic business goals, focusing on three key areas: Education and Youth, Environment, and Community.",
+    subSection: {
+      title: "Working with Local Communities",
+      points: [
+        "We are hiring locals: the majority of our workforce and our suppliers are from surrounding communities or within the region, contributing to a prosperous community and a skilled workforce.",
+        "We maintain strong relations with local communities and have a designated representative to maintain open communications, among other channels to update local stakeholders on activities and gather feedback.",
+        "We support local sports and culture: we sponsor fishing derbies, hockey, and curling teams, and donate opportunities that bring cultures together.",
+        "We support community infrastructure in many ways, from donating the use of chemicals for the water treatment plant to donating our electricians to maintain the town's power system.",
+      ],
+    },
     bgColor: "bg-gray-100",
   },
   {
@@ -93,6 +102,25 @@ const Sustainability = () => {
             <SheetDescription className="leading-relaxed text-base">
               {selectedSection?.description3}
             </SheetDescription>
+            {selectedSection?.subSection && (
+              <div className="mt-6">
+                <h3 className="text-lg font-bold mb-4">
+                  {selectedSection.subSection.title}
+                </h3>
+                <div className="space-y-2">
+                  {selectedSection.subSection.points.map(
+                    (point: string, index: number) => (
+                      <SheetDescription
+                        key={index}
+                        className="text-base leading-relaxed"
+                      >
+                        {point}
+                      </SheetDescription>
+                    )
+                  )}
+                </div>
+              </div>
+            )}
           </SheetHeader>
         </SheetContent>
       </Sheet>

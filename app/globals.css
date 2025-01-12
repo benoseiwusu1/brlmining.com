@@ -31,11 +31,7 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #888; /* Scrollbar thumb color */
-  border-radius: 10px; /* Rounded corners */
-  border: 2px solid #f1f1f1; /* Space around thumb */
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Thumb color on hover */
+  background-color: #79523a;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
 }
