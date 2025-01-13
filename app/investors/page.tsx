@@ -1,15 +1,21 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Hero from "../../components/Hero";
 import InfoCard from "@/components/InfoCard";
 import RssFeed from "@/components/RssFeed";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { spawn } from "child_process";
 
 const InvestorCentreOverview: React.FC = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className="bg-deep mx-auto px-4 py-16 sm:px-6 md:px-24 font-primary">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -62,6 +68,8 @@ const InvestorCentreOverview: React.FC = () => {
 };
 
 const Investors: React.FC = () => {
+  const [selectedCard, setSelectedCard] = useState(null);
+
   const cards = [
     {
       title: "Strategic Location",
@@ -76,6 +84,7 @@ const Investors: React.FC = () => {
           ],
         },
       ],
+      image: "/images/hero3.jpg",
     },
     {
       title: "High-Grade Resource",
@@ -123,15 +132,69 @@ const Investors: React.FC = () => {
         background="/images/report-bg.jpg"
         description="A Strategic Investment in a Prolific Gold Belt and Emerging Gold Mining District. Breakthrough Resources Limited (BRL) presents a unique investment opportunity through our flagship asset, the Sewum Gold Project. Located in the Aowin district of Ghana’s Western North Region, this advanced-stage exploration project is positioned within one of West Africa’s most prolific gold belts. The Sewum Gold Project not only overlaps the historic high-grade underground mine but also sits in a region celebrated for its substantial gold deposits."
       />
-      <h3 className="text-4xl mx-auto max-w-xl text-center my-12">
-        Why Invest in Breakthrough Resources Limited?
-      </h3>
-      <div className="flex flex-col md:flex-row gap-x-4 container mx-auto px-4 sm:px-4 md:px-20 md:py-16 py-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {cards.map((card, index) => (
-            <InfoCard key={index} title={card.title} points={card.points} />
-          ))}
-        </div>
+      <div className="container mx-auto px-4 md:px-20">
+        <h3 className="text-4xl mx-auto max-w-xl text-center my-12">
+          Why Invest in Breakthrough Resources Limited?
+        </h3>
+
+        <Carousel>
+          <CarouselContent>
+            {cards.map((card, index) => (
+              <CarouselItem className="md:basis-1/3 lg:basis-1/3" key={index}>
+                <div className="relative group overflow-hidden rounded-md">
+                  <Card className="relative group overflow-hidden rounded-md">
+                    {/* Background Image */}
+                    <div
+                      className="absolute inset-0 bg-cover bg-center transform transition duration-300 group-hover:scale-105"
+                      style={{
+                        backgroundImage: `url(${card.image})`,
+                      }}
+                    />
+
+                    {/* Semi-Transparent Overlay */}
+                    <div className="absolute inset-0 bg-black bg-opacity-75 group-hover:bg-opacity-80 z-10 transition duration-150" />
+
+                    {/* Card Content */}
+                    <CardContent className="relative z-20 flex flex-col items-center justify-center gap-y-4 py-4 px-8 h-56">
+                      <span className="text-xl font-semibold text-white text-center w-[250px] uppercase">
+                        {card.title}
+                      </span>
+                      {card.points.map(({ text }) => (
+                        <span className="text-white text-center">
+                          {text.slice(0, 60)}...
+                        </span>
+                      ))}
+                    </CardContent>
+
+                    {/* Action Button */}
+                    <div className="absolute bottom-4 left-4 z-30">
+                      <Dialog>
+                        {/* <DialogTrigger asChild>
+                          <button
+                            className="bg-white px-4 py-2 text-sm font-semibold rounded shadow hover:bg-gray-100"
+                            onClick={() => setSelectedCard(card)}
+                          >
+                            Learn More
+                          </button>
+                        </DialogTrigger> */}
+                        <DialogContent>
+                          <h3 className="text-xl font-bold">
+                            {selectedCard?.title}
+                          </h3>
+                          <p className="mt-2 text-sm">
+                            {selectedCard?.description}
+                          </p>
+                        </DialogContent>
+                      </Dialog>
+                    </div>
+                  </Card>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </div>
       <InvestorCentreOverview />
       <RssFeed />
