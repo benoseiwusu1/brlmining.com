@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
   }, [mobileMenuOpen]);
 
   return (
-    <nav className="py-2 font-primary">
+    <nav className="py-2 bg-white font-primary">
       <div className="w-full container mx-auto px-4 sm:px-6 md:px-20 py-3 flex justify-between items-center">
         <Link href="/">
           <img
