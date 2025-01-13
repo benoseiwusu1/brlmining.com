@@ -2,6 +2,7 @@
 import React from "react";
 import Hero from "../../components/Hero";
 import ContactDetails from "@/components/ContactDetails";
+import ContactForm from "@/components/ContactForm";
 
 interface InputProps {
   label: string;
@@ -38,7 +39,7 @@ const Contact: React.FC = () => {
     <section>
       <Hero title="Contact" background="/images/contact-bg.jpg" />
       <ContactDetails />
-      <div className=""></div>
+      <ContactForm />
     </section>
   );
 };
