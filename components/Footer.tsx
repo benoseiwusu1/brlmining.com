@@ -96,7 +96,7 @@ const Footer: React.FC = () => {
       <div className="border-t border-gray-700 mt-8 pt-4">
         <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center">
           <p className="text-grey-400 text-sm">
-            © 2024 BRL Mining Exploration Inc. All rights reserved.{" "}
+            ©BRL Mining Exploration Inc. All rights reserved.{" "}
             <Link href="/terms" className="hover:text-white">
               Terms of Service
             </Link>{" "}

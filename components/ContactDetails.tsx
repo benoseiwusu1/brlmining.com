@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactDetails: React.FC = () => {
   return (
-    <div className="bg-gray-100 flex flex-col md:flex-row items-center md:items-center mb-8">
+    <div className="bg-gray-100 flex flex-col md:flex-row items-center md:items-center">
       {/* Left Image */}
       <div className="w-full md:w-1/2 mb-6 md:mb-0 h-[600px]">
         <iframe

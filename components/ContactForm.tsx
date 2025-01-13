@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-white py-16">
       <div className="container mx-auto px-4 md:px-20">
         <h2 className="text-4xl uppercase mb-4 text-center">Contact us</h2>
         <p className="text-center mb-16">
@@ -89,7 +89,7 @@ const ContactForm = () => {
           <div className="mx-auto text-center">
             <button
               type="submit"
-              className="w-max bg-dark text-white font-bold py-2 px-4 focus:ring focus:ring-blue-200"
+              className="w-max bg-primary text-white font-bold py-2 px-4 focus:ring focus:ring-blue-200"
             >
               Submit
             </button>
