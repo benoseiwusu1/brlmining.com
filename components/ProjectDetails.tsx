@@ -10,6 +10,7 @@ import ProjectCard from "./ProjectCard";
 type Section = {
   title: string;
   content: string;
+  image?: string;
 };
 
 type ProjectDetailsProps = {
@@ -77,6 +78,9 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
                 }`}
               >
                 <p className="leading-loose">{section.content}</p>
+                {section.image && (
+                  <img src={section.image} className="h-[900px] mx-auto" />
+                )}
               </div>
             )}
           </div>
