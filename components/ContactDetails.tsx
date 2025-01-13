@@ -29,7 +29,7 @@ const ContactDetails: React.FC = () => {
             Registered Office
           </span>
           <br />
-          <div className="space-y-2 mt-3">
+          <div className="">
             <p className="text-black">4 Apple Avenue</p>
             <p className="text-black">East Legon</p>
             <p className="text-black">Accra, GA 372 – 7679</p>
@@ -51,8 +51,11 @@ const ContactDetails: React.FC = () => {
           </a>
         </p>
         <p className="text-gray-600 mb-6">
-          <span className="font-bold text-xl text-black">Address</span> <br />
-          <a className="text-black mt-3">Some Address in Accra, Ghana</a>
+          <span className="font-bold text-xl text-black">Postal Address</span>
+          <br />
+          <p className="text-black">PO Box CT 6033</p>
+          <p className="text-black">Cantonments, Accra</p>
+          <p className="text-black">Ghana</p>
         </p>
       </div>
     </div>
