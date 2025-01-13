@@ -12,7 +12,7 @@ const SewumGoldProject = () => {
             title: "Prime Location",
             content:
               "The Sewum project is strategically located in an emerging gold mining district, neighboring major projects and deposits within the southwest end of the Sefwi belt, which is second only to the Ashanti belt in terms of gold endowment.",
-            image: "/images/sewum-map.jpg",
+            image: "/images/sewum-maps.jpg",
           },
 
           {
