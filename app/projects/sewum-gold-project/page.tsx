@@ -1,9 +1,15 @@
 import React from "react";
 import ProjectDetails from "@/components/ProjectDetails";
+import Hero from "@/components/Hero";
 
 const SewumGoldProject = () => {
   return (
     <>
+      <Hero
+        background=""
+        title="Sewum Gold Project"
+        description="The project boasts a significant gold inventory, with an inferred resource of 355,000 ounces."
+      />
       <ProjectDetails
         title="Sewum Gold Project"
         location="Aowin District, Western North Region, Ghana"
