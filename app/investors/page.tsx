@@ -1,8 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
 import Link from "next/link";
-import Section from "../../components/Section";
-import News from "../../components/News";
 import Hero from "../../components/Hero";
 import InfoCard from "@/components/InfoCard";
 import RssFeed from "@/components/RssFeed";

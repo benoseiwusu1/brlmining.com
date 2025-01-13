@@ -1,5 +1,5 @@
-import ProjectDetails from "@/components/ProjectDetails";
 import React from "react";
+import ProjectDetails from "@/components/ProjectDetails";
 
 const SewumGoldProject = () => {
   return (

@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import "./ProjectDetails.css";
-import News from "./News";
 import Info from "./Info";
 import ProjectCard from "./ProjectCard";
 

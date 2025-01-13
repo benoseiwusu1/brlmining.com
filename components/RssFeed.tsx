@@ -4,7 +4,6 @@ import moment from "moment";
 import Link from "next/link";
 import NewsCard from "./NewsCard";
 import { NewsPlaceHolder } from "../components/NewsPlaceHolder";
-import Button from "./Button";
 
 const formatDate = (dateString: string): string => {
   return moment(dateString).format("MMMM Do, YYYY");
@@ -19,7 +18,6 @@ type FeedItem = {
   imageUrl?: string;
 };
 
-// Updated fetch function with proper typing
 const fetchRss = async (): Promise<FeedItem[]> => {
   const response = await fetch("/api/rss");
   if (!response.ok) {
@@ -39,8 +37,6 @@ export default function RssFeed() {
     queryFn: fetchRss,
     staleTime: 1000 * 60 * 10,
   });
-
-  console.log("data", rssData);
 
   return (
     <section className="py-12 bg-grey">
