@@ -6,7 +6,7 @@ const SewumGoldProject = () => {
   return (
     <>
       <Hero
-        background=""
+        background="/images/bg.jpg"
         title="Sewum Gold Project"
         description="The project boasts a significant gold inventory, with an inferred resource of 355,000 ounces."
       />

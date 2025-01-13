@@ -71,9 +71,10 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
             {openSection === section.title && (
               <div
                 className={`p-6 ${
-                  section.title === "Location" || section.title === "History"
+                  section.title === "Prime Location" ||
+                  section.title === "History"
                     ? "bg-grey"
-                    : "bg-none"
+                    : "bg-white"
                 }`}
               >
                 <p className="leading-loose">{section.content}</p>
