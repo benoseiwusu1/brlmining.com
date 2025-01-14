@@ -79,7 +79,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
               >
                 <p className="leading-loose">{section.content}</p>
                 {section.image && (
-                  <img src={section.image} className="h-[900px] mx-auto" />
+                  <img src={section.image} className="h-[800px] mx-auto" />
                 )}
               </div>
             )}
