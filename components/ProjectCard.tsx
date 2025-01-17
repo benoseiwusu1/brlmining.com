@@ -29,7 +29,7 @@ const explore = [
   {
     title: "Additional Drilling",
     description:
-      ": Expanding our drilling efforts into other high-priority zones, particularly the Oteng Block, which shows promise for resource expansion. This area will be a key focus for ongoing exploration and resource growth",
+      "Expanding our drilling efforts into other high-priority zones, particularly the Oteng Block, which shows promise for resource expansion. This area will be a key focus for ongoing exploration and resource growth",
     icon: "carbon:drill-down",
   },
   {

@@ -53,9 +53,9 @@ const ContactDetails: React.FC = () => {
         <p className="text-gray-600 mb-6">
           <span className="font-bold text-xl text-black">Postal Address</span>
           <br />
-          <p className="text-black">PO Box CT 6033</p>
-          <p className="text-black">Cantonments, Accra</p>
-          <p className="text-black">Ghana</p>
+          <span className="text-black">PO Box CT 6033</span>
+          <span className="text-black">Cantonments, Accra</span>
+          <span className="text-black">Ghana</span>
         </p>
       </div>
     </div>

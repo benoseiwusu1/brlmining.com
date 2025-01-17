@@ -66,11 +66,9 @@ const Navbar: React.FC = () => {
           />
         </Link>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex flex-col items-end space-y-2">
           <Socials />
 
-          {/* Navigation Links */}
           <div className="flex flex-row space-x-5 text-black">
             {navLinks.map((link) =>
               link.dropdown ? (

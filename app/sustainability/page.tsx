@@ -13,7 +13,8 @@ import RssFeed from "@/components/RssFeed";
 
 const sections = [
   {
-    imageSrc: "/images/pro1.jpg",
+    imageSrc:
+      "https://images.pexels.com/photos/28906307/pexels-photo-28906307/free-photo-of-construction-workers-in-orange-safety-vests-in-moscow.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Our People Commitment",
     description:
       "At Breakthrough, diversity and inclusion are fundamental to our values as we progress with the Sewum Gold Project. We are committed to fostering a workplace that supports the health, safety, and well-being of every team member, ensuring a culture of personal growth, professional development, and job satisfaction.",
@@ -24,7 +25,8 @@ const sections = [
     bgColor: "bg-gray-100",
   },
   {
-    imageSrc: "/images/pro3.jpg",
+    imageSrc:
+      "https://images.pexels.com/photos/162540/career-firefighter-relaxing-job-162540.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Health & Safety",
     description:
       "Our objective for the Sewum Gold Project is to eliminate workplace injuries and illnesses, extending the same high standards of health, safety, and well-being to both our employees and contractors. We are committed to adhering to all relevant legislation and maintaining a rigorous approach to these critical aspects.",
@@ -33,7 +35,8 @@ const sections = [
     bgColor: "bg-white",
   },
   {
-    imageSrc: "/images/pro3.jpg",
+    imageSrc:
+      "https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Our community ",
     description:
       "Our commitment to the Sewum Gold Project includes fostering strong, respectful relationships with all stakeholders and the communities we work in. We approach community relations with respect and inclusivity, ensuring transparent, open, and effective engagement to build long-term, sustainable relationships. Our community and stakeholder engagement strategy involves identifying and consulting with all relevant stakeholders. We actively listen to, understand, and respond to community views, concerns, and feedback promptly. We adhere to the principle of free, prior, and informed consent in all interactions with local communities.",
@@ -51,7 +54,8 @@ const sections = [
     bgColor: "bg-gray-100",
   },
   {
-    imageSrc: "/images/pro3.jpg",
+    imageSrc:
+      "https://images.pexels.com/photos/589802/pexels-photo-589802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Our Environment",
     description:
       "At Breakthrough Resources, our commitment to the Sewum Gold Project is rooted in environmental responsibility and sustainability. We are dedicated to finding, developing, and operating mines in a manner that prioritizes environmental protection.",
