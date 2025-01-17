@@ -98,15 +98,7 @@ const Sustainability = () => {
         open={!!selectedSection}
         onOpenChange={() => setSelectedSection(null)}
       >
-        <SheetContent
-          style={{
-            width: "40vw",
-            maxWidth: "90vw",
-            maxHeight: "100vh",
-            overflowY: "auto",
-          }}
-          className="custom-scrollbar"
-        >
+        <SheetContent className="custom-scrollbar sheet-content">
           <SheetHeader>
             <SheetTitle className="text-">{selectedSection?.title}</SheetTitle>
             <img
