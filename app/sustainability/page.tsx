@@ -75,7 +75,7 @@ const Sustainability = () => {
   return (
     <section className="">
       <Hero
-        background="/images/pro1.jpg"
+        background="https://images.pexels.com/photos/2101137/pexels-photo-2101137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         title="Sustainability"
         description="At Breakthrough Resources, we are revitalizing the Sewum region, which has a mining history that dates back to 1909. Our mission is to explore, develop and establish a medium-scale underground mine that embodies 21st-century sustainability. As we advance with the Sewum Gold Project, we are committed to integrating sustainable practices into every facet of our operations. Our strategy is firmly rooted in a global vision that values local impact, ensuring the well-being of our people, the environment, and the communities we serve."
       />

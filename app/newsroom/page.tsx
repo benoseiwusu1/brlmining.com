@@ -42,7 +42,11 @@ const Newsroom = () => {
 
   return (
     <section>
-      <Hero title="Newsroom" background="/images/news-bg.jpg" />
+      <Hero
+        title="Newsroom"
+        background="https://images.pexels.com/photos/256523/pexels-photo-256523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        description="Latest mining news: Innovations, market trends, and industry updates."
+      />
       <div className="container mx-auto px-4 md:px-20 my-20">
         {isError ? (
           <p style={{ color: "red", textAlign: "center" }}>
