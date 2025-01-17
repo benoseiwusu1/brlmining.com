@@ -16,7 +16,7 @@ const SustainabilityCard = ({
   onOpen: () => void;
 }) => {
   return (
-    <Card className="hover:shadow-lg transition-shadow flex flex-col justify-between">
+    <Card className="hover:shadow-lg transition-shadow flex flex-col justify-between rounded-none">
       <div className="h-36 w-full">
         <img
           src={section.imageSrc}
@@ -32,13 +32,12 @@ const SustainabilityCard = ({
           <CardDescription className="mb-4">
             {section.description.slice(0, 80)}...
           </CardDescription>
-          <Button
-            variant="secondary"
+          <p
             onClick={onOpen}
-            className="mt-auto w-full rounded-full bg-primary text-white hover:bg-primary-dark text-xs uppercase"
+            className="mt-auto rounded-full bg-transparent text-primary text-xs uppercase text-left cursor-pointer w-max hover:underline transition-all duration-300"
           >
             Read More
-          </Button>
+          </p>
         </CardContent>
       </div>
     </Card>

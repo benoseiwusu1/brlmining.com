@@ -83,7 +83,7 @@ const Sustainability = () => {
         <h3 className="text-4xl uppercase text-center my-12">
           Explore this section
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
           {sections.map((section, index) => (
             <SustainabilityCard
               key={index}
