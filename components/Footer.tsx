@@ -5,11 +5,11 @@ import Socials from "./Socials";
 
 const Footer: React.FC = () => {
   const importantLinks = [
-    { name: "Investor Centre", path: "/investor-centre" },
-    { name: "Reports", path: "/reports" },
-    { name: "Media", path: "/media" },
-    { name: "Presentations", path: "/presentations" },
-    { name: "Events", path: "/events" },
+    { name: "Company", path: "/about" },
+    { name: "Projects", path: "/projects" },
+    { name: "Investors", path: "/investors" },
+    { name: "Sustainability", path: "/sustainability" },
+    { name: "Newsroom", path: "/newsroom" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -18,13 +18,9 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 md:px-8 lg:px-16 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo and Important Links */}
         <div>
-          <div className="mb-6">
-            <img
-              src="/images/logo-white.png"
-              alt="BRL Mining Exploration"
-              className="h-12"
-            />
-          </div>
+          <h3 className="text-lg font-semibold mb-4 uppercase">
+            Popular Links
+          </h3>
           <ul className="space-y-2">
             {importantLinks.map((link, index) => (
               <li key={index}>
@@ -41,7 +37,7 @@ const Footer: React.FC = () => {
 
         {/* Location Information */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Location</h3>
+          <h3 className="text-lg font-semibold mb-4 uppercase">Location</h3>
           <address className="not-italic text-grey-300">
             No. 4 Apple Street
             <br />
@@ -66,7 +62,7 @@ const Footer: React.FC = () => {
 
         {/* Newsletter Subscription */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
+          <h3 className="text-lg font-semibold mb-4 uppercase">Newsletter</h3>
           <p className="text-grey-300 mb-4">
             Subscribe to get news alerts and project updates.
           </p>

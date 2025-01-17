@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="py-2 bg-white font-primary">
       <div className="w-full container mx-auto px-4 sm:px-6 md:px-20 py-3 flex justify-between items-center">
-        <Link href="/">
+        <Link href="/" className="">
           <img
             src="/images/brl-logo.png"
             alt="Logo"
