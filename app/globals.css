@@ -22,25 +22,24 @@ body {
   }
 }
 .sheet-content {
-  width: 70% !important; /* Default width for desktop */
+  width: 70% !important;
   height: 100%;
-  max-width: 90vw; /* Desktop width */
-  max-height: 100vh; /* Desktop height */
+  max-width: 90vw;
+  max-height: 100vh;
   overflow-y: auto;
   padding: 1rem;
-  /* border-radius: 0.5rem; */
 }
 
 @media (max-width: 1024px) {
   .sheet-content {
-    max-width: 60vw; /* Tablet width */
+    max-width: 60vw;
   }
 }
 
 @media (max-width: 768px) {
   .sheet-content {
-    max-width: 90vw; /* Mobile width */
-    width: 100%; /* Full width for small screens */
+    max-width: 90vw;
+    width: 100%;
     height: 100%;
   }
 }

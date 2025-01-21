@@ -90,7 +90,8 @@ const Investors: React.FC = () => {
           ],
         },
       ],
-      image: "/images/hero3.jpg",
+      image:
+        "https://images.unsplash.com/photo-1483638867541-6d87ce7f2d4d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1pbmluZ3xlbnwwfHwwfHx8MA%3D%3D",
     },
     {
       title: "High-Grade Resource",
@@ -130,7 +131,8 @@ const Investors: React.FC = () => {
           ],
         },
       ],
-      image: "/images/hero1.jpg",
+      image:
+        "https://plus.unsplash.com/premium_photo-1661963715038-e0075ee0c005?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1pbmluZyUyMEV4cGxvcmF0aW9ufGVufDB8fDB8fHww",
     },
     {
       title: "Proximity to Key Resources",
@@ -139,7 +141,8 @@ const Investors: React.FC = () => {
           text: "Located 25 km from Enchi, which provides logistical support and enhances operational efficiency.",
         },
       ],
-      image: "/images/bg.jpg",
+      image:
+        "https://images.unsplash.com/photo-1499591934245-40b55745b905?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1hcHxlbnwwfHwwfHx8MA%3D%3D",
     },
     {
       title: "Experienced Management Team",
@@ -148,7 +151,8 @@ const Investors: React.FC = () => {
           text: "BRL’s leadership team brings extensive experience in advancing mining projects from exploration to production, with a proven track record across Africa.",
         },
       ],
-      image: "/images/hero3.jpg",
+      image:
+        "https://images.unsplash.com/photo-1573164574511-73c773193279?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJsYWNrJTIwdGVhbXxlbnwwfHwwfHx8MA%3D%3D",
     },
   ];
 
@@ -168,29 +172,22 @@ const Investors: React.FC = () => {
             {cards.map((card, index) => (
               <CarouselItem className="md:basis-1/3 lg:basis-1/3" key={index}>
                 <div className="relative group overflow-hidden rounded-md">
-                  <Card className="relative group overflow-hidden rounded-md">
-                    {/* Background Image */}
-                    <div
-                      className="absolute inset-0 bg-cover bg-center transform transition duration-300 group-hover:scale-105"
-                      style={{
-                        backgroundImage: `url(${card.image})`,
-                      }}
-                    />
-
-                    {/* Semi-Transparent Overlay */}
-                    <div className="absolute inset-0 bg-black bg-opacity-80 group-hover:bg-opacity-85 z-10 transition duration-150" />
-
+                  <Card className="relative group overflow-hidden rounded-md h-[450px]">
                     {/* Card Content */}
-                    <CardContent className="relative z-20 flex flex-col items-center justify-between h-64 p-4">
-                      <div className="flex flex-col items-center">
-                        <span className="text-xl font-semibold text-white text-center w-[300px] uppercase text-bold ">
+                    <div className="h-56 w-full">
+                      <img
+                        src={card.image}
+                        alt={card.title}
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
+                    <CardContent className="relative flex flex-col items-center justify-between h-64 p-4 pb-10">
+                      <div className="flex flex-col items-center text-black">
+                        <span className="text-lg font-semibold text-center w-[300px] uppercase text-bold ">
                           {card.title}
                         </span>
                         {card.points.map(({ text }, index) => (
-                          <span
-                            className="text-white text-center mt-2"
-                            key={index}
-                          >
+                          <span className="text-center mt-2" key={index}>
                             {text.slice(0, 150)} ...
                           </span>
                         ))}
@@ -199,7 +196,7 @@ const Investors: React.FC = () => {
                       <Dialog>
                         <DialogTrigger asChild>
                           <button
-                            className="bg-transparent text-white border border-primary px-6 py-2 text-xs font-semibold rounded shadow uppercase"
+                            className="bg-transparent border border-primary px-6 py-2 text-xs font-semibold rounded shadow uppercase"
                             onClick={() => setSelectedCard(card)}
                           >
                             Learn More

@@ -38,8 +38,6 @@ const Newsroom = () => {
     staleTime: 1000 * 60 * 10,
   });
 
-  console.log("data", rssData);
-
   return (
     <section>
       <Hero

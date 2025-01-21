@@ -17,7 +17,7 @@ const Hero: React.FC<HeroProps> = ({
   mainPage,
 }) => {
   return (
-    <section className="relative w-full h-[400px] md:h-[400px] overflow-hidden font-primary">
+    <section className="relative w-full h-[400px] overflow-hidden font-primary">
       <div
         className={`absolute inset-0 transition-opacity duration-1000 `}
         style={{
@@ -28,7 +28,7 @@ const Hero: React.FC<HeroProps> = ({
       >
         <div className="absolute inset-0 bg-black opacity-75"></div>
       </div>
-      <div className="absolute inset-0 flex items-center justify-start px-8 lg:px-24 text-left text-white">
+      <div className="absolute inset-0 flex items-center justify-start px-4 md:px-24 text-left text-white">
         <div className="w-full">
           <h1
             style={{ lineHeight: "1.5" }}
