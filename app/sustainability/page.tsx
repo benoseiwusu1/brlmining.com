@@ -13,8 +13,7 @@ import RssFeed from "@/components/RssFeed";
 
 const sections = [
   {
-    imageSrc:
-      "https://images.pexels.com/photos/28906307/pexels-photo-28906307/free-photo-of-construction-workers-in-orange-safety-vests-in-moscow.jpeg?auto=compress&cs=tinysrgb&w=600",
+    imageSrc: "/images/dalle.webp",
     title: "Our People Commitment",
     description:
       "At Breakthrough, diversity and inclusion are fundamental to our values as we progress with the Sewum Gold Project. We are committed to fostering a workplace that supports the health, safety, and well-being of every team member, ensuring a culture of personal growth, professional development, and job satisfaction.",
@@ -26,7 +25,7 @@ const sections = [
   },
   {
     imageSrc:
-      "https://images.pexels.com/photos/162540/career-firefighter-relaxing-job-162540.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aGVsbWV0fGVufDB8fDB8fHww",
     title: "Health & Safety",
     description:
       "Our objective for the Sewum Gold Project is to eliminate workplace injuries and illnesses, extending the same high standards of health, safety, and well-being to both our employees and contractors. We are committed to adhering to all relevant legislation and maintaining a rigorous approach to these critical aspects.",
@@ -36,7 +35,7 @@ const sections = [
   },
   {
     imageSrc:
-      "https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.unsplash.com/photo-1509099863731-ef4bff19e808?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Our community ",
     description:
       "Our commitment to the Sewum Gold Project includes fostering strong, respectful relationships with all stakeholders and the communities we work in. We approach community relations with respect and inclusivity, ensuring transparent, open, and effective engagement to build long-term, sustainable relationships. Our community and stakeholder engagement strategy involves identifying and consulting with all relevant stakeholders. We actively listen to, understand, and respond to community views, concerns, and feedback promptly. We adhere to the principle of free, prior, and informed consent in all interactions with local communities.",

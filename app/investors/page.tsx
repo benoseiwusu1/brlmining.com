@@ -160,7 +160,7 @@ const Investors: React.FC = () => {
     <div className="">
       <Hero
         title="Investors"
-        background="/images/report-bg.jpg"
+        background="/images/inv.png"
         description="A Strategic Investment in a Prolific Gold Belt and Emerging Gold Mining District. Breakthrough Resources Limited (BRL) presents a unique investment opportunity through our flagship asset, the Sewum Gold Project. Located in the Aowin district of Ghana’s Western North Region, this advanced-stage exploration project is positioned within one of West Africa’s most prolific gold belts. The Sewum Gold Project not only overlaps the historic high-grade underground mine but also sits in a region celebrated for its substantial gold deposits."
       />
       <h3 className="text-4xl mx-auto max-w-3xl text-center my-16 uppercase">
