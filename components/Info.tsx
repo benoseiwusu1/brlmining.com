@@ -20,10 +20,10 @@ const Info: React.FC = () => {
             deposit.
           </p>
           <Link
-            href="/investor-centre"
+            href="/investorS"
             className="inline-block mt-4 px-6 py-3 border border-white text-white rounded-full text-sm"
           >
-            STOCK & INVESTOR INFO
+            INVESTOR INFO
           </Link>
         </div>
 
