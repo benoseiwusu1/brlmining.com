@@ -39,7 +39,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
 
   return (
     <div>
-      <div className="w-full mx-auto font-primary bg-white md:w-4/6 pb-4 mb-5 border-2 border-gray-200">
+      <div className="w-full mx-auto font-primary bg-white md:w-4/6 pb-4 mb-5 border border-gray-600">
         <div className="bg-white mb-8 py-8 px-8 pt-16 pb-6">
           <Link href="/projects" className="text-primary text-sm">
             &lt;<span className="ml-2">ALL PROJECTS</span>
@@ -72,7 +72,8 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
               <div
                 className={`p-6 ${
                   section.title === "Prime Location" ||
-                  section.title === "History"
+                  section.title === "Exploration Upside" ||
+                  section.title === "Infrastructure and Proximity"
                     ? "bg-[#e1ddd4]"
                     : "bg-white"
                 }`}
