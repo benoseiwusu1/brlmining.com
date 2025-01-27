@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Socials from "./Socials";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Footer: React.FC = () => {
   const importantLinks = [
@@ -46,45 +47,24 @@ const Footer: React.FC = () => {
             <br />
             <br />
             Accra, Ghana
-            <br />
-            <br />
-            (+233) 302-543-667
-            <br />
-            <br />
-            <a
-              href="mailto:info@BRL Miningex.ca"
-              className="text-grey-300 hover:text-white transition"
-            >
-              info@BRLmining.com
-            </a>
           </address>
         </div>
 
         {/* Newsletter Subscription */}
         <div>
-          <h3 className="text-lg font-semibold mb-4 uppercase">Newsletter</h3>
-          <p className="text-grey-300 mb-4">
-            Subscribe to get news alerts and project updates.
+          <h3 className="text-lg font-semibold mb-4 uppercase">Contact</h3>
+          <p className="flex items-center gap-2">
+            <Icon icon="ic:baseline-phone" />
+            +233 302 543 667
           </p>
-          <form className="flex flex-col space-y-4 mb-4">
-            <label htmlFor="email" className="text-grey-400 text-sm">
-              <span className="text-red-600">*</span> Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your email"
-              className="px-3 py-2 rounded bg-white text-black focus:outline-none focus:ring-2 focus:ring-secondary"
-              required
-            />
-            <button
-              type="submit"
-              className="bg-transparent text-white border border-secondary py-3 rounded hover:bg-secondary transition duration-100 text-sm"
-            >
-              SUBSCRIBE
-            </button>
-          </form>
-          <Socials color={true} />
+          <br />
+          <a
+            href="mailto:info@BRL Miningex.ca"
+            className="text-grey-300 hover:text-white transition flex items-center gap-2"
+          >
+            <Icon icon="ic:baseline-email" />
+            info@BRLmining.com
+          </a>
         </div>
       </div>
 

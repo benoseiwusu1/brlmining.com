@@ -39,7 +39,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
 
   return (
     <div>
-      <div className="w-full mx-auto font-primary bg-white md:w-4/6 pb-4 mb-5">
+      <div className="w-full mx-auto font-primary bg-white md:w-4/6 pb-4 mb-5 border-2 border-gray-200">
         <div className="bg-white mb-8 py-8 px-8 pt-16 pb-6">
           <Link href="/projects" className="text-primary text-sm">
             &lt;<span className="ml-2">ALL PROJECTS</span>
@@ -57,7 +57,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
                 section.title === "Prime Location" ||
                 section.title === "Exploration Upside" ||
                 section.title === "Infrastructure and Proximity"
-                  ? "bg-grey py-8"
+                  ? "bg-[#e1ddd4] py-8"
                   : "bg-none py-4"
               }`}
             >
@@ -73,13 +73,13 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
                 className={`p-6 ${
                   section.title === "Prime Location" ||
                   section.title === "History"
-                    ? "bg-grey"
+                    ? "bg-[#e1ddd4]"
                     : "bg-white"
                 }`}
               >
                 <p className="leading-loose">{section.content}</p>
                 {section.image && (
-                  <img src={section.image} className="h-[800px] mx-auto" />
+                  <img src={section.image} className="h-[700px] mx-auto" />
                 )}
               </div>
             )}
