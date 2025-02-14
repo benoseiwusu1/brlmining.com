@@ -1,6 +1,4 @@
-// src/components/About.tsx
 import React from "react";
-import Hero from "./Hero";
 import AboutCard from "./AboutCard";
 import RssFeed from "./RssFeed";
 
