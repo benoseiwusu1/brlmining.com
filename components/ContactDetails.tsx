@@ -3,7 +3,6 @@ import React from "react";
 const ContactDetails: React.FC = () => {
   return (
     <div className="bg-gray-100 flex flex-col md:flex-row items-center md:items-center">
-      {/* Left Image */}
       <div className="w-full md:w-1/2 mb-6 md:mb-0 h-[600px]">
         {/* <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d430.5729139967408!2d-0.14494827738223284!3d5.637106408538737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1736755559487!5m2!1sen!2sgh"
@@ -21,7 +20,6 @@ const ContactDetails: React.FC = () => {
         />
       </div>
 
-      {/* Right Contact Details */}
       <div className="w-full md:w-1/2 p-12">
         <h2 className=" text-2xl md:text-5xl text-dark uppercase">
           Want to get in touch?
