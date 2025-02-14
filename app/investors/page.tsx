@@ -42,7 +42,6 @@ const InvestorCentreOverview: React.FC = () => {
           </Link>
         </div>
 
-        {/* Media Section */}
         <div className="md:border-l md:pl-8 border-black">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Media</h2>
           <div className="space-y-4">
@@ -173,7 +172,6 @@ const Investors: React.FC = () => {
               <CarouselItem className="md:basis-1/3 lg:basis-1/3" key={index}>
                 <div className="relative group overflow-hidden rounded-md">
                   <Card className="relative group overflow-hidden rounded-md h-[450px]">
-                    {/* Card Content */}
                     <div className="h-56 w-full">
                       <img
                         src={card.image}
@@ -207,14 +205,12 @@ const Investors: React.FC = () => {
                             {selectedCard?.title}
                           </DialogTitle>
 
-                          {/* Iterate through points */}
                           {selectedCard?.points.map(
                             (point: any, index: number) => (
                               <div key={index} className="mb-4">
                                 <p className="text-base mb-2 leading-relaxed">
                                   {point.text}
                                 </p>
-                                {/* Iterate through subPoints */}
                                 {point.subPoints && (
                                   <ul className="list-disc pl-5 text-base">
                                     {point.subPoints.map(
@@ -245,7 +241,6 @@ const Investors: React.FC = () => {
         </Carousel>
       </div>
 
-      {/* <InvestorCentreOverview /> */}
       <div className="bg-primary w-full h-56 mt-12 p-6 flex items-center justify-center">
         <div className="container mx-auto px-4 md:px-20 text-white">
           <h3 className="text-2xl text-center">
