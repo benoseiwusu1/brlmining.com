@@ -41,12 +41,10 @@ const explore = [
 ];
 
 const ProjectCard: React.FC = () => {
-  // State for toggling sections
   const [openSection1, setOpenSection1] = useState(false);
   const section1Ref = useRef<HTMLDivElement>(null);
   const [sectionHeight, setSectionHeight] = useState(0);
 
-  // Update section height dynamically when toggle state changes
   useEffect(() => {
     if (openSection1 && section1Ref.current) {
       setSectionHeight(section1Ref.current.scrollHeight);
@@ -71,7 +69,6 @@ const ProjectCard: React.FC = () => {
             high-priority targets. Key elements of our current strategy include:
           </p>
         </div>
-        {/* First Section */}
         <button
           className="flex items-center justify-between w-max bg-primary text-white px-8 py-3 rounded-full mb-4 mx-auto"
           onClick={() => setOpenSection1(!openSection1)}
@@ -98,7 +95,6 @@ const ProjectCard: React.FC = () => {
                 <div className="bg-primary w-max p-4 rounded-full mx-auto z-10 absolute -top-7 left-1/2 transform -translate-x-1/2">
                   <Icon icon={icon} fontSize={26} color="white" />
                 </div>
-                {/* Content Section */}
                 <div className="px-7 flex flex-col gap-y-4 pt-12 text-center">
                   <h3 className="text-lg mb-3">{title}</h3>
                   <p className="text-base leading-relaxed text-gray-500">
