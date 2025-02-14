@@ -102,7 +102,6 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile Menu Icon */}
         <button
           className="md:hidden text-primary focus:outline-none"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -116,7 +115,7 @@ const Navbar: React.FC = () => {
           <div className="fixed inset-0 z-40 bg-black bg-opacity-70 backdrop-blur-md overlay" />
 
           {/* Sidebar Menu */}
-          <div
+          {/* <div
             className={`fixed top-0 right-0 z-50 h-full w-10/12 py-6 bg-black text-white p-5 transform transition-transform duration-300 ${
               mobileMenuOpen ? "translate-x-0" : "translate-x-full"
             }`}
@@ -175,7 +174,7 @@ const Navbar: React.FC = () => {
               )}
             </div>
             <Socials color />
-          </div>
+          </div> */}
         </>
       )}
     </nav>
