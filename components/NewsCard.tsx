@@ -1,6 +1,4 @@
 import React from "react";
-import { Icon } from "@iconify/react/dist/iconify.js";
-import Image from "next/image";
 
 type NewsCardProps = {
   categories?: string[];
@@ -26,7 +24,6 @@ const NewsCard: React.FC<NewsCardProps> = ({
         </span>
       </div>
 
-      {/* Content Section */}
       <div className="px-4 flex flex-col gap-y-4 justify-between">
         <p className="text-xs text-grey-500 mt-1">{date}</p>
         <h3 className="text-sm font-bold mt-1">{title}</h3>
