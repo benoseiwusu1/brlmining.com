@@ -26,7 +26,7 @@ const NewsCard: React.FC<NewsCardProps> = ({
 
       <div className="px-4 flex flex-col gap-y-4 justify-between">
         <p className="text-xs text-grey-500 mt-1">{date}</p>
-        <h3 className="text-sm font-bold mt-1">{title}</h3>
+        <h3 className="text-base font-bold mt-1">{title}</h3>
         <a
           target="blank"
           href={link}

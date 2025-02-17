@@ -5,7 +5,7 @@ import RssFeed from "./RssFeed";
 const About: React.FC = () => {
   return (
     <section>
-      <div className="container mx-auto px-4 md:px-20 my-12 leading-relaxed">
+      <div className="container mx-auto px-4 md:px-20 my-12 leading-loose text-lg">
         <p>
           BRL is committed to ensuring the safe and efficient operation of its
           projects, and has recorded impressive results in its work on this

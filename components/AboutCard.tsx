@@ -36,7 +36,7 @@ const AboutCard: React.FC<AboutCardProps> = ({
           <h2 className="text-xl md:text-2xl font-bold text-grey-800 mb-4 capitalize">
             {title}
           </h2>
-          <p className="text-base mb-4 leading-loose">{description}</p>
+          <p className="text-lg mb-4 leading-loose">{description}</p>
           {isButton && <Button text="View all projects" path="/projects" />}
         </div>
       </div>
