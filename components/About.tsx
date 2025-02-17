@@ -37,7 +37,7 @@ const About: React.FC = () => {
         <AboutCard
           title="A Trusted Partner"
           description="Breakthrough Resources Ltd. is dedicated to maximizing shareholder value while adhering to the highest standards of environmental, social, and corporate governance (ESG). We integrate these principles into every aspect of our operations, ensuring that our projects contribute positively to local communities and the environment. Our Board of Directors are vigilant in exploring potential strategic opportunities and will promptly disclose any significant developments. In the meantime, we remain focused on seeking out and evaluating opportunities that align with our growth strategy and offer value to our shareholders. Breakthrough Resources Ltd. is positioned for continued success and growth through its strategic exploration and development efforts. "
-          image="/images/pro2.jpg"
+          image="/images/partner.jpg"
           isButton
         />
       </div>
