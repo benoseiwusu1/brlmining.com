@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4 uppercase">
               Working Hours
             </h3>
-            <p className="text-grey-300">Monday - Friday: 8AM - 5PM</p>
+            <p className="text-grey-300 mb-2">Monday - Friday: 8AM - 5PM</p>
             <p className="text-grey-300">Saturday - Sunday: Closed</p>
           </div>
         </div>
@@ -52,10 +52,7 @@ const Footer: React.FC = () => {
         {/* Bottom row: copyright */}
         <div className="border-t border-gray-700 mt-8 pt-4">
           <p className="text-grey-400 text-sm text-center">
-            © 2025 Breakthrough Resources. All rights reserved.{" "}
-            <Link href="mailto:info@BRLmining.com" className="hover:text-white">
-              Email: info@BRLmining.com
-            </Link>
+            © 2025 Breakthrough Resources. All rights reserved
           </p>
         </div>
       </div>
