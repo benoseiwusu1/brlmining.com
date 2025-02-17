@@ -1,4 +1,3 @@
-import React, { useState, useRef, useEffect } from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 const explore = [
