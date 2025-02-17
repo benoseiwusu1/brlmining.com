@@ -99,7 +99,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
       </div>
       {/* <News /> */}
       <ProjectCard />
-      <Info />
+      {/* <Info /> */}
     </div>
   );
 };

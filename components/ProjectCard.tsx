@@ -41,18 +41,6 @@ const explore = [
 ];
 
 const ProjectCard: React.FC = () => {
-  const [openSection1, setOpenSection1] = useState(false);
-  const section1Ref = useRef<HTMLDivElement>(null);
-  const [sectionHeight, setSectionHeight] = useState(0);
-
-  useEffect(() => {
-    if (openSection1 && section1Ref.current) {
-      setSectionHeight(section1Ref.current.scrollHeight);
-    } else {
-      setSectionHeight(0);
-    }
-  }, [openSection1]);
-
   return (
     <section className="py-12 bg-grey">
       <div className="container mx-auto px-4 md:px-20">
@@ -69,23 +57,8 @@ const ProjectCard: React.FC = () => {
             high-priority targets. Key elements of our current strategy include:
           </p>
         </div>
-        <button
-          className="flex items-center justify-between w-max bg-primary text-white px-8 py-3 rounded-full mb-4 mx-auto"
-          onClick={() => setOpenSection1(!openSection1)}
-        >
-          <span>{openSection1 ? "Hide strategies" : "See strategies"}</span>
-          <Icon
-            icon={openSection1 ? "mdi:chevron-up" : "mdi:chevron-down"}
-            fontSize={24}
-          />
-        </button>
-        <div
-          ref={section1Ref}
-          className="overflow-hidden transition-all duration-500"
-          style={{
-            height: `${sectionHeight}px`,
-          }}
-        >
+
+        <div className="overflow-hidden transition-all duration-500">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-y-9 gap-x-6 my-12 ">
             {explore.map(({ title, description, icon }, index) => (
               <div
