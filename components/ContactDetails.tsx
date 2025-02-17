@@ -27,7 +27,7 @@ const ContactDetails: React.FC = () => {
         <p className="text-2xl font-meduim text-black mb-6 mt-3">
           Our customer support team is here for you
         </p>
-        <p className="text-gray-600 mb-6">
+        <div className="text-gray-600 mb-6">
           <span className="font-bold text-xl text-black">
             Registered Office
           </span>
@@ -37,7 +37,7 @@ const ContactDetails: React.FC = () => {
             <p className="text-black">East Legon</p>
             <p className="text-black">Accra, GA 372 – 7679</p>
           </div>
-        </p>
+        </div>
         <p className="text-gray-600 mb-6">
           <span className="font-bold text-xl text-black">Phone</span> <br />
           <a href="tel:8884441212" className="text-black mt-3">

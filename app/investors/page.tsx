@@ -73,7 +73,6 @@ const InvestorCentreOverview: React.FC = () => {
 
 const Investors: React.FC = () => {
   const [selectedCard, setSelectedCard] = useState<any>(null);
-  console.log(selectedCard);
 
   const cards = [
     {
@@ -172,14 +171,14 @@ const Investors: React.FC = () => {
               <CarouselItem className="md:basis-1/3 lg:basis-1/3" key={index}>
                 <div className="relative group overflow-hidden rounded-md">
                   <Card className="relative group overflow-hidden rounded-md h-[450px]">
-                    <div className="h-56 w-full">
+                    <div className="h-44 w-full">
                       <img
                         src={card.image}
                         alt={card.title}
                         className="h-full w-full object-cover"
                       />
                     </div>
-                    <CardContent className="relative flex flex-col items-center justify-between h-64 p-4 pb-10">
+                    <CardContent className="relative flex flex-col items-center justify-between h-64 p-4 pb-7 mt-6">
                       <div className="flex flex-col items-center text-black">
                         <span className="text-lg font-semibold text-center w-[300px] uppercase text-bold ">
                           {card.title}
