@@ -65,40 +65,38 @@ const Navbar: React.FC = () => {
           />
         </Link>
 
-        <div className="hidden md:flex flex-col items-end space-y-2">
-          <div className="flex flex-row space-x-5 text-black">
-            {navLinks.map((link) =>
-              link.dropdown ? (
-                <div key={link.name} className="relative group">
-                  <Link
-                    href={link.path}
-                    className="uppercase text-sm font-medium"
-                  >
-                    {link.name}
-                  </Link>
-                  <div className="absolute top-full left-0 bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-100 invisible group-hover:visible z-10 w-max font-medium">
-                    {link.dropdown.map((dropdownLink) => (
-                      <Link
-                        key={dropdownLink.name}
-                        href={dropdownLink.path}
-                        className="block px-4 py-2 hover:bg-grey uppercase text-sm"
-                      >
-                        {dropdownLink.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              ) : (
+        <div className="hidden md:flex items-center space-x-5 text-black">
+          {navLinks.map((link) =>
+            link.dropdown ? (
+              <div key={link.name} className="relative group">
                 <Link
-                  key={link.name}
                   href={link.path}
-                  className="font-medium uppercase text-sm"
+                  className="uppercase text-sm font-medium"
                 >
                   {link.name}
                 </Link>
-              )
-            )}
-          </div>
+                <div className="absolute top-full left-0 bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-100 invisible group-hover:visible z-10 w-max font-medium">
+                  {link.dropdown.map((dropdownLink) => (
+                    <Link
+                      key={dropdownLink.name}
+                      href={dropdownLink.path}
+                      className="block px-4 py-2 hover:bg-grey uppercase text-sm"
+                    >
+                      {dropdownLink.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={link.name}
+                href={link.path}
+                className="font-medium uppercase text-sm"
+              >
+                {link.name}
+              </Link>
+            )
+          )}
         </div>
 
         <button
