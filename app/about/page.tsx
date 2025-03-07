@@ -1,10 +1,47 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
-import React from "react";
+import Head from "next/head";
 
 const AboutPage = () => {
   return (
     <section>
+      <Head>
+        <title>About Breakthrough Resources Limited - Mining Experts</title>
+        <meta
+          name="description"
+          content="Learn about Breakthrough Resources Limited, a leading mining consultancy and resource management company in Ghana."
+        />
+        <meta
+          name="keywords"
+          content="About Breakthrough Resources Limited, mining consultancy, BRL Mining, resource management, Ghana mining experts"
+        />
+        <meta name="author" content="Breakthrough Resources Limited" />
+
+        {/* Open Graph Tags */}
+        <meta
+          property="og:title"
+          content="About Breakthrough Resources Limited - Mining Experts"
+        />
+        <meta
+          property="og:description"
+          content="We provide expert solutions in mining consultancy, exploration, and sustainable resource management."
+        />
+        <meta property="og:image" content="/public/brl-mining-about.jpg" />
+        <meta property="og:url" content="https://www.brlmining.com/about" />
+
+        {/* Twitter Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="About Breakthrough Resources Limited - Mining Experts"
+        />
+        <meta
+          name="twitter:description"
+          content="Industry leaders in mining consultancy and sustainable exploration."
+        />
+        <meta name="twitter:image" content="/public/brl-mining-about.jpg" />
+      </Head>
+
       <Hero
         title="About the Company"
         background="/images/aboutt.jpg"
