@@ -27,7 +27,7 @@ const AboutCard: React.FC<AboutCardProps> = ({
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0  h-[550px]">
           <img
             src={image}
-            alt="Map of projects locations"
+            alt="Map of projects location"
             className="w-full h-full object-cover"
           />
         </div>
